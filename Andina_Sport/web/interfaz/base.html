@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#15171b">
+  <meta name="description" content="Andina Sport, tienda deportiva de demostración en Colombia. Explora equipamiento para fútbol, baloncesto, entrenamiento, running, natación y ciclismo.">
+  <title>ANDINA SPORT | Tienda deportiva</title>
+  <style>/*__CSS__*/</style>
+</head>
+<body>
+<a class="skip" href="#principal">Saltar al contenido</a>
+<div class="utility"><div class="wrap row"><span><i data-i="pin"></i>Ibagué, Colombia</span><span>Compra de demostración <b> / </b> COP</span></div></div>
+<header><div class="wrap headerRow">
+  <a href="#tienda" class="logo" aria-label="Andina Sport, página de inicio"><svg viewBox="0 0 47 34" aria-hidden="true"><path fill="currentColor" d="M1 31 18 3h8L9 31zm13 0L31 3h6L20 31zm12 0 10-17 10 17H33l3-5-1-2-4 7z"/></svg><span>ANDINA <b>SPORT</b></span></a>
+  <nav aria-label="Navegación principal"><a href="#tienda" data-page="tienda">Tienda</a><button data-act="deportes">Deportes</button><a href="#para-ti" data-page="para-ti">Para ti</a></nav>
+  <div class="headerTools"><button class="circle" data-act="buscar" title="Buscar productos" aria-label="Buscar productos"><i data-i="search"></i></button><button class="circle" data-act="guardados" title="Ver favoritos" aria-label="Ver favoritos"><i data-i="heart"></i></button><button class="bag" data-act="bolsa"><i data-i="bag"></i><span>Bolsa</span><b id="bolsaN">0</b></button></div>
+</div></header>
+<main id="principal" tabindex="-1">
+<section id="page-tienda" class="page">
+  <section class="hero" aria-labelledby="heroTitulo">
+    <div class="heroPicture" role="img" aria-label="Corredores en movimiento vistos desde arriba sobre una pista de atletismo"></div>
+    <div class="wrap heroInner"><div class="heroCopy">
+      <div class="eyebrow light"><span></span>Colección multideporte</div>
+      <h1 id="heroTitulo">Entra en<br><em>juego.</em></h1>
+      <p>De la cancha al gimnasio. Encuentra el equipo para tu próximo entrenamiento.</p>
+      <button class="accent" data-act="explorar">Ver catálogo</button>
+    </div></div>
+  </section>
+  <div class="wrap">
+    <section class="catalog" id="catalogo" aria-labelledby="catalogTitle">
+      <div class="sectionTop"><h2 id="catalogTitle">Equipamiento deportivo</h2><label class="sort">Ordenar por <select id="orden"><option value="seleccion">Destacados</option><option value="menor">Menor precio</option><option value="mayor">Mayor precio</option><option value="valoracion">Mejor valoración</option></select></label></div>
+      <div class="filters"><div id="categorias" class="chips"></div><label class="searchBox"><i data-i="search"></i><input id="buscar" type="search" placeholder="Buscar producto o marca" aria-label="Buscar por nombre o marca"></label></div>
+      <div id="resultInfo" class="count" aria-live="polite"></div><div id="productos" class="products"></div><div class="more" id="mas"></div>
+    </section>
+    <section id="deportes" class="departamentos" aria-labelledby="deportesTitle">
+      <div class="sectionTop"><h2 id="deportesTitle">Compra por deporte</h2></div>
+      <div class="departmentGrid">
+        <button class="dept deptFutbol" data-deporte="Fútbol"><span>Fútbol</span></button>
+        <button class="dept deptEntreno" data-deporte="Entrenamiento"><span>Entrenamiento</span></button>
+        <button class="dept deptRunning" data-deporte="Running"><span>Running</span></button>
+      </div>
+      <div id="otrosDeportes" class="otherSports"></div>
+    </section>
+  </div>
+</section>
+<section id="page-para-ti" class="page wrap interior" hidden>
+  <div class="eyebrow"><span></span>Tu selección</div><h1>Recomendados para ti</h1><p class="intro">Abre un producto o añádelo a la bolsa para personalizar tus cinco sugerencias.</p>
+  <div class="switcher" id="motores"><button data-motor="Spark">Productos afines · Spark</button><button data-motor="Neo4j">Gustos similares · Neo4j</button></div>
+  <div id="motorNota" class="notice" aria-live="polite"></div><div id="recs" class="products recGrid"></div><div class="recFoot"><button class="outline" data-act="metodo">Cómo se calculan</button></div>
+</section>
+<section id="page-laboratorio" class="page wrap interior" hidden>
+  <div class="eyebrow"><span></span>Reto 2 · Bases de datos masivas</div>
+  <div class="labHead"><div><h1>Laboratorio de datos</h1><p class="intro">Sigue un pedido deportivo desde Kafka hasta su almacenamiento y compara las recomendaciones de Spark y Neo4j.</p></div><div id="modo" class="mode"></div></div>
+  <div class="labTabs" aria-label="Secciones del laboratorio"><button data-lab="sesion">Mi sesión</button><button data-lab="analisis">Consultas</button><button data-lab="modelos">Comparación</button><button data-lab="proyecto">Origen de los datos</button></div>
+  <div id="laboratorioCuerpo"></div>
+</section>
+</main>
+<footer><div class="wrap footrow"><a class="footbrand" href="#tienda">ANDINA <b>SPORT</b></a><span>Equipamiento deportivo · Ibagué, Colombia</span><a href="#laboratorio">Laboratorio del reto</a></div></footer>
+<dialog id="modal"><div class="modalBody" id="modalBody"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<script type="application/json" id="dataset">__DATA__</script>
+<script>/*__JS__*/</script>
+</body>
+</html>

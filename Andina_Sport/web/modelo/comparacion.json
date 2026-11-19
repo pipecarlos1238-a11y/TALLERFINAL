@@ -1,0 +1,1 @@
+{"carga_s":9.82,"mediana_ms":6.9,"p95_ms":16.72,"Spark":{"hit":0.0,"recall":0.0,"aciertos":0,"usuarios_acierto":0},"Neo4j":{"hit":0.01,"recall":0.01,"aciertos":2,"usuarios_acierto":2}}

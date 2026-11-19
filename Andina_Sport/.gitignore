@@ -1,0 +1,7 @@
+.env
+work/
+__pycache__/
+artifacts/
+spark-warehouse/
+*.pyc
+*.bundle

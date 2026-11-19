@@ -1,0 +1,161 @@
+{
+  "estado": {
+    "aplicacion": "andina-web",
+    "listo": true,
+    "etapa": "Disponible",
+    "error": "",
+    "tema": "andina-web-v1"
+  },
+  "eventos": [
+    [
+      {
+        "usuario": "0cf11677-b55e-4725-841b-c70373029ad1",
+        "sesion": "c7d431a4-9e6b-4f23-90a5-8c8906941e7f",
+        "id": "314be287-ddfa-4506-a1ae-db071f414838",
+        "tipo": "vista",
+        "ts": 1795112456495,
+        "lineas": [
+          {
+            "id": "B07W62HK9M",
+            "cantidad": 1
+          }
+        ]
+      },
+      {
+        "id": "314be287-ddfa-4506-a1ae-db071f414838",
+        "offset": 0,
+        "particion": 0,
+        "objeto": "web/eventos/fecha=2026-11-19/314be287-ddfa-4506-a1ae-db071f414838.json"
+      }
+    ],
+    [
+      {
+        "usuario": "0cf11677-b55e-4725-841b-c70373029ad1",
+        "sesion": "c7d431a4-9e6b-4f23-90a5-8c8906941e7f",
+        "id": "5d27471d-449d-4e1b-b9bb-53d453d0a992",
+        "tipo": "clic",
+        "ts": 1795112456677,
+        "lineas": [
+          {
+            "id": "B07W62HK9M",
+            "cantidad": 1
+          }
+        ]
+      },
+      {
+        "id": "5d27471d-449d-4e1b-b9bb-53d453d0a992",
+        "offset": 1,
+        "particion": 0,
+        "objeto": "web/eventos/fecha=2026-11-19/5d27471d-449d-4e1b-b9bb-53d453d0a992.json"
+      }
+    ],
+    [
+      {
+        "usuario": "0cf11677-b55e-4725-841b-c70373029ad1",
+        "sesion": "c7d431a4-9e6b-4f23-90a5-8c8906941e7f",
+        "id": "1b6b56f5-c269-4338-aec2-28bdc64b0b28",
+        "tipo": "compra",
+        "ts": 1795112456715,
+        "lineas": [
+          {
+            "id": "B07W62HK9M",
+            "cantidad": 1
+          }
+        ]
+      },
+      {
+        "id": "1b6b56f5-c269-4338-aec2-28bdc64b0b28",
+        "offset": 2,
+        "particion": 0,
+        "objeto": "web/eventos/fecha=2026-11-19/1b6b56f5-c269-4338-aec2-28bdc64b0b28.json"
+      }
+    ]
+  ],
+  "cassandra": {
+    "eventos": [
+      {
+        "id": "1b6b56f5-c269-4338-aec2-28bdc64b0b28",
+        "ts": 1795112456715,
+        "tipo": "compra",
+        "lineas": [
+          {
+            "cantidad": 1,
+            "id": "B07W62HK9M"
+          }
+        ],
+        "offset": 2,
+        "particion": 0,
+        "objeto": "web/eventos/fecha=2026-11-19/1b6b56f5-c269-4338-aec2-28bdc64b0b28.json"
+      },
+      {
+        "id": "5d27471d-449d-4e1b-b9bb-53d453d0a992",
+        "ts": 1795112456677,
+        "tipo": "clic",
+        "lineas": [
+          {
+            "cantidad": 1,
+            "id": "B07W62HK9M"
+          }
+        ],
+        "offset": 1,
+        "particion": 0,
+        "objeto": "web/eventos/fecha=2026-11-19/5d27471d-449d-4e1b-b9bb-53d453d0a992.json"
+      },
+      {
+        "id": "314be287-ddfa-4506-a1ae-db071f414838",
+        "ts": 1795112456495,
+        "tipo": "vista",
+        "lineas": [
+          {
+            "cantidad": 1,
+            "id": "B07W62HK9M"
+          }
+        ],
+        "offset": 0,
+        "particion": 0,
+        "objeto": "web/eventos/fecha=2026-11-19/314be287-ddfa-4506-a1ae-db071f414838.json"
+      }
+    ],
+    "perfil": {
+      "ultima_sesion": "c7d431a4-9e6b-4f23-90a5-8c8906941e7f",
+      "ultimo_ms": 1795112456715
+    }
+  },
+  "s3": {
+    "bucket": "andina-deportes-prueba",
+    "clave": "web/eventos/fecha=2026-11-19/1b6b56f5-c269-4338-aec2-28bdc64b0b28.json",
+    "bytes": 221,
+    "contenido": {
+      "id": "1b6b56f5-c269-4338-aec2-28bdc64b0b28",
+      "lineas": [
+        {
+          "cantidad": 1,
+          "id": "B07W62HK9M"
+        }
+      ],
+      "sesion": "c7d431a4-9e6b-4f23-90a5-8c8906941e7f",
+      "tipo": "compra",
+      "ts": 1795112456715,
+      "usuario": "0cf11677-b55e-4725-841b-c70373029ad1"
+    }
+  },
+  "neo4j": {
+    "ranking": [
+      {
+        "id": "B08QCYRY47",
+        "puntos": 32
+      },
+      {
+        "id": "B00NWXLQD2",
+        "puntos": 8
+      },
+      {
+        "id": "B09MJKJYLQ",
+        "puntos": 8
+      }
+    ],
+    "comprados": [
+      "B07W62HK9M"
+    ]
+  }
+}
